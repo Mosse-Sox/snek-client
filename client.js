@@ -11,7 +11,9 @@ const connect = function () {
 
   conn.on('connect', () => {
     console.log('You are now connected to the snek server');
-    conn.write('Name: AWT'); 
+    conn.write('Name: AWT');
+    // conn.write('Move: up');
+    
   });
 
   conn.on('data', (data) => {
