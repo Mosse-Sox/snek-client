@@ -11,13 +11,12 @@ const connect = function () {
 
   conn.on('connect', () => {
     console.log('You are now connected to the snek server');
+    conn.write('Name: AWT'); 
   });
 
   conn.on('data', (data) => {
     console.log(`Server: `, data);
   });
-
-  
 
   conn.on('close', () => {
     console.log('Ended connection with the snek server');
