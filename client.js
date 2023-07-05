@@ -22,6 +22,7 @@ const connect = function () {
 
   conn.on('close', () => {
     console.log('Ended connection with the snek server');
+    process.exit();
   });
 
   return conn;
