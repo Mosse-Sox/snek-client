@@ -36,6 +36,18 @@ const handleUserInput = (data, conn) => {
   if (data === '\u0064' || data === '\u0044') {
     conn.write('Move: right');
   }
+
+  // if 'e' or 'E' is pressed
+  if (data === '\u0065' || data === '\u0045') {
+    conn.write('Say: hello!');
+  }
+
+  // if 'r' or 'R' is pressed
+  if (data === '\u0072' || data === '\u0052') {
+    conn.write('Say: snek');
+  }
+
+  
 };
 
 module.exports = setupInput;
